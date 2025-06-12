@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\School\\BAS\\Spring 2025\\Software Engineering II IT 340\\AssignmentManagementSolution\\AssignmentManagement\\AssignmentManagement.core.csproj",
-      "projectName": "AssignmentManagement.core",
-      "projectPath": "E:\\School\\BAS\\Spring 2025\\Software Engineering II IT 340\\AssignmentManagementSolution\\AssignmentManagement\\AssignmentManagement.core.csproj",
+      "projectUniqueName": "E:\\School\\BAS\\Spring 2025\\Software Engineering II IT 340\\AssignmentManagementSolution\\AssignmentManagement\\AssignmentManagement.Core.csproj",
+      "projectName": "AssignmentManagement.Core",
+      "projectPath": "E:\\School\\BAS\\Spring 2025\\Software Engineering II IT 340\\AssignmentManagementSolution\\AssignmentManagement\\AssignmentManagement.Core.csproj",
       "packagesPath": "C:\\Users\\julie\\.nuget\\packages\\",
       "outputPath": "E:\\School\\BAS\\Spring 2025\\Software Engineering II IT 340\\AssignmentManagementSolution\\AssignmentManagement\\obj\\",
       "projectStyle": "PackageReference",
@@ -52,7 +52,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net9.0": {
@@ -73,7 +73,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

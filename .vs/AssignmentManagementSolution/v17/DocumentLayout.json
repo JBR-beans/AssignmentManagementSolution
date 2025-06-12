@@ -3,32 +3,36 @@
   "WorkspaceRootPath": "E:\\School\\BAS\\Spring 2025\\Software Engineering II IT 340\\AssignmentManagementSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F74D2953-C62A-40C6-8E1E-FB0C5E893625}|AssignmentManagement.UI\\AssignmentManagement.UI.csproj|e:\\school\\bas\\spring 2025\\software engineering ii it 340\\assignmentmanagementsolution\\assignmentmanagement.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F74D2953-C62A-40C6-8E1E-FB0C5E893625}|AssignmentManagement.UI\\AssignmentManagement.UI.csproj|solutionrelative:assignmentmanagement.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0E72E91D-AFE6-4623-9177-DAB78D23BBF4}|AssignmentManagement.Api\\AssignmentManagement.Api.csproj|e:\\school\\bas\\spring 2025\\software engineering ii it 340\\assignmentmanagementsolution\\assignmentmanagement.api\\controllers\\assignmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E72E91D-AFE6-4623-9177-DAB78D23BBF4}|AssignmentManagement.Api\\AssignmentManagement.Api.csproj|solutionrelative:assignmentmanagement.api\\controllers\\assignmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F235701-80E9-49FB-8BE5-E4E0801DD5AB}|AssignmentManagement\\AssignmentManagement.Core.csproj|e:\\school\\bas\\spring 2025\\software engineering ii it 340\\assignmentmanagementsolution\\assignmentmanagement\\services\\assignmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F235701-80E9-49FB-8BE5-E4E0801DD5AB}|AssignmentManagement\\AssignmentManagement.Core.csproj|solutionrelative:assignmentmanagement\\services\\assignmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F74D2953-C62A-40C6-8E1E-FB0C5E893625}|AssignmentManagement.UI\\AssignmentManagement.UI.csproj|e:\\school\\bas\\spring 2025\\software engineering ii it 340\\assignmentmanagementsolution\\assignmentmanagement.ui\\consoleui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F74D2953-C62A-40C6-8E1E-FB0C5E893625}|AssignmentManagement.UI\\AssignmentManagement.UI.csproj|solutionrelative:assignmentmanagement.ui\\consoleui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F235701-80E9-49FB-8BE5-E4E0801DD5AB}|AssignmentManagement\\AssignmentManagement.Core.csproj|e:\\school\\bas\\spring 2025\\software engineering ii it 340\\assignmentmanagementsolution\\assignmentmanagement\\assignmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F235701-80E9-49FB-8BE5-E4E0801DD5AB}|AssignmentManagement\\AssignmentManagement.Core.csproj|solutionrelative:assignmentmanagement\\assignmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6795CDD9-B1FF-4949-A0BA-AA50EEC3A3DE}|AssignmentManagement.ApiTests\\AssignmentManagement.ApiTests.csproj|e:\\school\\bas\\spring 2025\\software engineering ii it 340\\assignmentmanagementsolution\\assignmentmanagement.apitests\\assignmentmanagementapitests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6795CDD9-B1FF-4949-A0BA-AA50EEC3A3DE}|AssignmentManagement.ApiTests\\AssignmentManagement.ApiTests.csproj|solutionrelative:assignmentmanagement.apitests\\assignmentmanagementapitests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F235701-80E9-49FB-8BE5-E4E0801DD5AB}|AssignmentManagement\\AssignmentManagement.Core.csproj|e:\\school\\bas\\spring 2025\\software engineering ii it 340\\assignmentmanagementsolution\\assignmentmanagement\\assignmentmanagement.core.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{5F235701-80E9-49FB-8BE5-E4E0801DD5AB}|AssignmentManagement\\AssignmentManagement.Core.csproj|solutionrelative:assignmentmanagement\\assignmentmanagement.core.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{5F235701-80E9-49FB-8BE5-E4E0801DD5AB}|AssignmentManagement\\AssignmentManagement.Core.csproj|e:\\school\\bas\\spring 2025\\software engineering ii it 340\\assignmentmanagementsolution\\assignmentmanagement\\models\\assignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F235701-80E9-49FB-8BE5-E4E0801DD5AB}|AssignmentManagement\\AssignmentManagement.Core.csproj|solutionrelative:assignmentmanagement\\models\\assignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F74D2953-C62A-40C6-8E1E-FB0C5E893625}|AssignmentManagement.UI\\AssignmentManagement.UI.csproj|e:\\school\\bas\\spring 2025\\software engineering ii it 340\\assignmentmanagementsolution\\assignmentmanagement.ui\\assignmentmanagement.ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{F74D2953-C62A-40C6-8E1E-FB0C5E893625}|AssignmentManagement.UI\\AssignmentManagement.UI.csproj|solutionrelative:assignmentmanagement.ui\\assignmentmanagement.ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{F3C72397-C3DE-45C1-B93F-F63B5EEAC18D}|AssignmentManagement.Tests\\AssignmentManagement.Tests.csproj|e:\\school\\bas\\spring 2025\\software engineering ii it 340\\assignmentmanagementsolution\\assignmentmanagement.tests\\assignmentservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3C72397-C3DE-45C1-B93F-F63B5EEAC18D}|AssignmentManagement.Tests\\AssignmentManagement.Tests.csproj|solutionrelative:assignmentmanagement.tests\\assignmentservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F74D2953-C62A-40C6-8E1E-FB0C5E893625}|AssignmentManagement.UI\\AssignmentManagement.UI.csproj|e:\\school\\bas\\spring 2025\\software engineering ii it 340\\assignmentmanagementsolution\\assignmentmanagement.ui\\assignmentmanagement.ui.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{F74D2953-C62A-40C6-8E1E-FB0C5E893625}|AssignmentManagement.UI\\AssignmentManagement.UI.csproj|solutionrelative:assignmentmanagement.ui\\assignmentmanagement.ui.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{5F235701-80E9-49FB-8BE5-E4E0801DD5AB}|AssignmentManagement\\AssignmentManagement.Core.csproj|e:\\school\\bas\\spring 2025\\software engineering ii it 340\\assignmentmanagementsolution\\assignmentmanagement\\interfaces\\iassignmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F235701-80E9-49FB-8BE5-E4E0801DD5AB}|AssignmentManagement\\AssignmentManagement.Core.csproj|solutionrelative:assignmentmanagement\\interfaces\\iassignmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F235701-80E9-49FB-8BE5-E4E0801DD5AB}|AssignmentManagement\\AssignmentManagement.Core.csproj|e:\\school\\bas\\spring 2025\\software engineering ii it 340\\assignmentmanagementsolution\\assignmentmanagement\\assignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F235701-80E9-49FB-8BE5-E4E0801DD5AB}|AssignmentManagement\\AssignmentManagement.Core.csproj|solutionrelative:assignmentmanagement\\assignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F235701-80E9-49FB-8BE5-E4E0801DD5AB}|AssignmentManagement\\AssignmentManagement.Core.csproj|e:\\school\\bas\\spring 2025\\software engineering ii it 340\\assignmentmanagementsolution\\assignmentmanagement\\services\\assignmentformatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F235701-80E9-49FB-8BE5-E4E0801DD5AB}|AssignmentManagement\\AssignmentManagement.Core.csproj|solutionrelative:assignmentmanagement\\services\\assignmentformatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -37,8 +41,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 169,
-          "SelectedChildIndex": 9,
+          "DockedWidth": 246,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -63,91 +67,99 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AssignmentManagement.Core",
-              "DocumentMoniker": "E:\\School\\BAS\\Spring 2025\\Software Engineering II IT 340\\AssignmentManagementSolution\\AssignmentManagement\\AssignmentManagement.Core.csproj",
-              "RelativeDocumentMoniker": "AssignmentManagement\\AssignmentManagement.Core.csproj",
-              "ToolTip": "E:\\School\\BAS\\Spring 2025\\Software Engineering II IT 340\\AssignmentManagementSolution\\AssignmentManagement\\AssignmentManagement.Core.csproj",
-              "RelativeToolTip": "AssignmentManagement\\AssignmentManagement.Core.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-07T04:22:50.78Z",
-              "EditorCaption": ""
+              "Title": "AssignmentManagementApiTests.cs",
+              "DocumentMoniker": "E:\\School\\BAS\\Spring 2025\\Software Engineering II IT 340\\AssignmentManagementSolution\\AssignmentManagement.ApiTests\\AssignmentManagementApiTests.cs",
+              "RelativeDocumentMoniker": "AssignmentManagement.ApiTests\\AssignmentManagementApiTests.cs",
+              "ToolTip": "E:\\School\\BAS\\Spring 2025\\Software Engineering II IT 340\\AssignmentManagementSolution\\AssignmentManagement.ApiTests\\AssignmentManagementApiTests.cs",
+              "RelativeToolTip": "AssignmentManagement.ApiTests\\AssignmentManagementApiTests.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAiwDMAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T05:37:58.765Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "AssignmentManagement.UI",
-              "DocumentMoniker": "E:\\School\\BAS\\Spring 2025\\Software Engineering II IT 340\\AssignmentManagementSolution\\AssignmentManagement.UI\\AssignmentManagement.UI.csproj",
-              "RelativeDocumentMoniker": "AssignmentManagement.UI\\AssignmentManagement.UI.csproj",
-              "ToolTip": "E:\\School\\BAS\\Spring 2025\\Software Engineering II IT 340\\AssignmentManagementSolution\\AssignmentManagement.UI\\AssignmentManagement.UI.csproj",
-              "RelativeToolTip": "AssignmentManagement.UI\\AssignmentManagement.UI.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-07T04:19:12.297Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AssignmentManagement.UI.csproj",
-              "DocumentMoniker": "E:\\School\\BAS\\Spring 2025\\Software Engineering II IT 340\\AssignmentManagementSolution\\AssignmentManagement.UI\\AssignmentManagement.UI.csproj",
-              "RelativeDocumentMoniker": "AssignmentManagement.UI\\AssignmentManagement.UI.csproj",
-              "ToolTip": "E:\\School\\BAS\\Spring 2025\\Software Engineering II IT 340\\AssignmentManagementSolution\\AssignmentManagement.UI\\AssignmentManagement.UI.csproj",
-              "RelativeToolTip": "AssignmentManagement.UI\\AssignmentManagement.UI.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvxAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-07T04:15:41.147Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ConsoleUI.cs",
-              "DocumentMoniker": "E:\\School\\BAS\\Spring 2025\\Software Engineering II IT 340\\AssignmentManagementSolution\\AssignmentManagement.UI\\ConsoleUI.cs",
-              "RelativeDocumentMoniker": "AssignmentManagement.UI\\ConsoleUI.cs",
-              "ToolTip": "E:\\School\\BAS\\Spring 2025\\Software Engineering II IT 340\\AssignmentManagementSolution\\AssignmentManagement.UI\\ConsoleUI.cs",
-              "RelativeToolTip": "AssignmentManagement.UI\\ConsoleUI.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAgwCsAAAAOAAAAAAAAAA==",
+              "Title": "AssignmentServiceTests.cs",
+              "DocumentMoniker": "E:\\School\\BAS\\Spring 2025\\Software Engineering II IT 340\\AssignmentManagementSolution\\AssignmentManagement.Tests\\AssignmentServiceTests.cs",
+              "RelativeDocumentMoniker": "AssignmentManagement.Tests\\AssignmentServiceTests.cs",
+              "ToolTip": "E:\\School\\BAS\\Spring 2025\\Software Engineering II IT 340\\AssignmentManagementSolution\\AssignmentManagement.Tests\\AssignmentServiceTests.cs",
+              "RelativeToolTip": "AssignmentManagement.Tests\\AssignmentServiceTests.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAkwBgAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T04:03:42.525Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T05:35:14.622Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\School\\BAS\\Spring 2025\\Software Engineering II IT 340\\AssignmentManagementSolution\\AssignmentManagement.UI\\Program.cs",
-              "RelativeDocumentMoniker": "AssignmentManagement.UI\\Program.cs",
-              "ToolTip": "E:\\School\\BAS\\Spring 2025\\Software Engineering II IT 340\\AssignmentManagementSolution\\AssignmentManagement.UI\\Program.cs",
-              "RelativeToolTip": "AssignmentManagement.UI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAACAAAAAAAAAA==",
+              "Title": "AssignmentsController.cs",
+              "DocumentMoniker": "E:\\School\\BAS\\Spring 2025\\Software Engineering II IT 340\\AssignmentManagementSolution\\AssignmentManagement.Api\\Controllers\\AssignmentsController.cs",
+              "RelativeDocumentMoniker": "AssignmentManagement.Api\\Controllers\\AssignmentsController.cs",
+              "ToolTip": "E:\\School\\BAS\\Spring 2025\\Software Engineering II IT 340\\AssignmentManagementSolution\\AssignmentManagement.Api\\Controllers\\AssignmentsController.cs",
+              "RelativeToolTip": "AssignmentManagement.Api\\Controllers\\AssignmentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T04:03:30.632Z",
+              "WhenOpened": "2025-05-26T05:33:59.942Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Assignment.cs",
-              "DocumentMoniker": "E:\\School\\BAS\\Spring 2025\\Software Engineering II IT 340\\AssignmentManagementSolution\\AssignmentManagement\\Assignment.cs",
-              "RelativeDocumentMoniker": "AssignmentManagement\\Assignment.cs",
-              "ToolTip": "E:\\School\\BAS\\Spring 2025\\Software Engineering II IT 340\\AssignmentManagementSolution\\AssignmentManagement\\Assignment.cs",
-              "RelativeToolTip": "AssignmentManagement\\Assignment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAjAAAAAAAAAA==",
+              "Title": "iAssignmentService.cs",
+              "DocumentMoniker": "E:\\School\\BAS\\Spring 2025\\Software Engineering II IT 340\\AssignmentManagementSolution\\AssignmentManagement\\Interfaces\\iAssignmentService.cs",
+              "RelativeDocumentMoniker": "AssignmentManagement\\Interfaces\\iAssignmentService.cs",
+              "ToolTip": "E:\\School\\BAS\\Spring 2025\\Software Engineering II IT 340\\AssignmentManagementSolution\\AssignmentManagement\\Interfaces\\iAssignmentService.cs",
+              "RelativeToolTip": "AssignmentManagement\\Interfaces\\iAssignmentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T03:52:38.027Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T05:31:25.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AssignmentService.cs",
+              "DocumentMoniker": "E:\\School\\BAS\\Spring 2025\\Software Engineering II IT 340\\AssignmentManagementSolution\\AssignmentManagement\\Services\\AssignmentService.cs",
+              "RelativeDocumentMoniker": "AssignmentManagement\\Services\\AssignmentService.cs",
+              "ToolTip": "E:\\School\\BAS\\Spring 2025\\Software Engineering II IT 340\\AssignmentManagementSolution\\AssignmentManagement\\Services\\AssignmentService.cs",
+              "RelativeToolTip": "AssignmentManagement\\Services\\AssignmentService.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAuwEgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T05:24:57.287Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AssignmentService.cs",
-              "DocumentMoniker": "E:\\School\\BAS\\Spring 2025\\Software Engineering II IT 340\\AssignmentManagementSolution\\AssignmentManagement\\AssignmentService.cs",
-              "RelativeDocumentMoniker": "AssignmentManagement\\AssignmentService.cs",
-              "ToolTip": "E:\\School\\BAS\\Spring 2025\\Software Engineering II IT 340\\AssignmentManagementSolution\\AssignmentManagement\\AssignmentService.cs",
-              "RelativeToolTip": "AssignmentManagement\\AssignmentService.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAcwD0AAAADAAAAAAAAAA==",
+              "Title": "ConsoleUI.cs",
+              "DocumentMoniker": "E:\\School\\BAS\\Spring 2025\\Software Engineering II IT 340\\AssignmentManagementSolution\\AssignmentManagement.UI\\ConsoleUI.cs",
+              "RelativeDocumentMoniker": "AssignmentManagement.UI\\ConsoleUI.cs",
+              "ToolTip": "E:\\School\\BAS\\Spring 2025\\Software Engineering II IT 340\\AssignmentManagementSolution\\AssignmentManagement.UI\\ConsoleUI.cs",
+              "RelativeToolTip": "AssignmentManagement.UI\\ConsoleUI.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAowFUAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T03:52:01.946Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T05:21:20.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Assignment.cs",
+              "DocumentMoniker": "E:\\School\\BAS\\Spring 2025\\Software Engineering II IT 340\\AssignmentManagementSolution\\AssignmentManagement\\Models\\Assignment.cs",
+              "RelativeDocumentMoniker": "AssignmentManagement\\Models\\Assignment.cs",
+              "ToolTip": "E:\\School\\BAS\\Spring 2025\\Software Engineering II IT 340\\AssignmentManagementSolution\\AssignmentManagement\\Models\\Assignment.cs",
+              "RelativeToolTip": "AssignmentManagement\\Models\\Assignment.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAADwvxYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T05:14:18.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AssignmentFormatter.cs",
+              "DocumentMoniker": "E:\\School\\BAS\\Spring 2025\\Software Engineering II IT 340\\AssignmentManagementSolution\\AssignmentManagement\\Services\\AssignmentFormatter.cs",
+              "RelativeDocumentMoniker": "AssignmentManagement\\Services\\AssignmentFormatter.cs",
+              "ToolTip": "E:\\School\\BAS\\Spring 2025\\Software Engineering II IT 340\\AssignmentManagementSolution\\AssignmentManagement\\Services\\AssignmentFormatter.cs",
+              "RelativeToolTip": "AssignmentManagement\\Services\\AssignmentFormatter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwkAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T05:07:49.209Z"
             }
           ]
         }

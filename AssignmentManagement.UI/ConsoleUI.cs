@@ -74,9 +74,16 @@ namespace AssignmentManagement.UI
 			var title = Console.ReadLine();
 			Console.Write("Enter the assignment description: ");
 			var description = Console.ReadLine();
+			Console.Write("Enter the assignment priority: ");
+			var priorityInput = Console.ReadLine();
+			Enum.TryParse<Priority>(priorityInput, true, out Priority priority);
+			Console.Write("Enter a note, or press Enter to skip: ");
+			var note = Console.ReadLine();
 
-			var assignment = new Assignment(title, description);
-			if (_assignmentService.AddAssignment(assignment))
+			var assignment = new Assignment(title, description, note, priority);
+			
+			//var assignment = new Assignment(title, description, );
+			if (_assignmentService.AddAssignment(assignment) != null)
 			{
 				Console.WriteLine("Assignment added successfully!");
 			}
@@ -100,7 +107,7 @@ namespace AssignmentManagement.UI
 			{
 				foreach (var assignment in assignments)
 				{
-					Console.WriteLine($"{assignment.Title}: {assignment.Description} (Completed: {assignment.IsCompleted})");
+					Console.WriteLine($"{assignment.Priority} | {assignment.Title}: {assignment.Description} (Completed: {assignment.IsCompleted}) | Note: {assignment.Note}");
 				}
 			}
 
@@ -119,7 +126,7 @@ namespace AssignmentManagement.UI
 			{
 				foreach (var assignment in assignments)
 				{
-					Console.WriteLine($"{assignment.Title}: {assignment.Description} (Completed: {assignment.IsCompleted})");
+					Console.WriteLine($"{assignment.Priority} | {assignment.Title}: {assignment.Description} (Completed: {assignment.IsCompleted}) | Note: {assignment.Note})");
 				}
 			}
 
@@ -158,7 +165,7 @@ namespace AssignmentManagement.UI
 			}
 			else
 			{
-				Console.WriteLine($"Found: {assignment.Title}: {assignment.Description} (Completed: {assignment.IsCompleted})");
+				Console.WriteLine($"Found: {assignment.Priority} | {assignment.Title}: {assignment.Description} (Completed: {assignment.IsCompleted}) | Note: {assignment.Note})");
 			}
 
 			Console.WriteLine("Press any key to continue...");
@@ -173,8 +180,13 @@ namespace AssignmentManagement.UI
 			var newTitle = Console.ReadLine();
 			Console.Write("Enter the new description: ");
 			var newDescription = Console.ReadLine();
+			Console.Write("Enter the assignment priority: ");
+			var newPriority = Console.ReadLine();
+			Enum.TryParse<Priority>(newPriority, true, out Priority priority);
+			Console.Write("Enter a note, or press Enter to skip: ");
+			var newNote = Console.ReadLine();
 
-			if (_assignmentService.UpdateAssignment(oldTitle, newTitle, newDescription))
+			if (_assignmentService.UpdateAssignment(oldTitle, newTitle, newDescription, newNote, priority))
 			{
 				Console.WriteLine("Assignment updated successfully.");
 			}

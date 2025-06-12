@@ -18,3 +18,4 @@ E:\School\BAS\Spring 2025\Software Engineering II IT 340\AssignmentManagementSol
 E:\School\BAS\Spring 2025\Software Engineering II IT 340\AssignmentManagementSolution\AssignmentManagement.UI\obj\Debug\net9.0\AssignmentManagement.UI.pdb
 E:\School\BAS\Spring 2025\Software Engineering II IT 340\AssignmentManagementSolution\AssignmentManagement.UI\obj\Debug\net9.0\AssignmentManagement.UI.genruntimeconfig.cache
 E:\School\BAS\Spring 2025\Software Engineering II IT 340\AssignmentManagementSolution\AssignmentManagement.UI\obj\Debug\net9.0\ref\AssignmentManagement.UI.dll
+E:\School\BAS\Spring 2025\Software Engineering II IT 340\AssignmentManagementSolution\AssignmentManagement.UI\obj\Debug\net9.0\AssignmentManagement.UI.sourcelink.json
