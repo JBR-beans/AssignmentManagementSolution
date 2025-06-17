@@ -23,6 +23,6 @@ namespace AssignmentManagement.Core
         public bool DeleteAssignment(string title);
 
 
-        public bool UpdateAssignment(string oldTitle, string newTitle, string newDescription, string newNote, Priority newPriority);
+        public bool UpdateAssignment(string oldTitle, string newTitle, string newDescription, DateTime newDueDate, string newNote, Priority newPriority);
     }
 }

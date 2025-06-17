@@ -6,66 +6,83 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
 using AssignmentManagement.Core;
+using AssignmentManagement.Core.Interfaces;
 
 namespace AssignmentManagement.UI
 {
 	public class ConsoleUI
 	{
 
-		private readonly AssignmentService _assignmentService;
+		private readonly iAssignmentFormatter _formatter;
+		private readonly iAssignmentService _assignmentService;
 
 		// Constructor to initialize the service
-		public ConsoleUI(AssignmentService assignmentService)
+		public ConsoleUI(iAssignmentService assignmentService, iAssignmentFormatter formatter)
 		{
 			_assignmentService = assignmentService;
+			_formatter = formatter;
 		}
 
-		public void ShowMenu()
+		private void ListOptions()
+		{
+			Console.WriteLine("\nAssignment Manager Menu:");
+			Console.WriteLine("1. Add Assignment");
+			Console.WriteLine("2. List All Assignments");
+			Console.WriteLine("3. List Incomplete Assignments");
+			Console.WriteLine("4. Mark Assignment as Complete");
+			Console.WriteLine("5. Search Assignment by Title");
+			Console.WriteLine("6. Update Assignment");
+			Console.WriteLine("7. Delete Assignment");
+			Console.WriteLine("0. Exit");
+			Console.Write("Choose an option: ");
+		}
+		public void Run()
 		{
 			while (true)
 			{
-				Console.Clear();
-				Console.WriteLine("Assignment Manager Menu:");
-				Console.WriteLine("1. Add Assignment");
-				Console.WriteLine("2. List All Assignments");
-				Console.WriteLine("3. List Incomplete Assignments");
-				Console.WriteLine("4. Mark Assignment as Complete");
-				Console.WriteLine("5. Search Assignment by Title");
-				Console.WriteLine("6. Update Assignment");
-				Console.WriteLine("7. Delete Assignment");
-				Console.WriteLine("0. Exit");
+				ListOptions();
 
-				var choice = Console.ReadLine();
-				switch (choice)
+				var input = Console.ReadLine();
+
+				if (!HandleInput(input))
 				{
-					case "1":
-						AddAssignment();
-						break;
-					case "2":
-						ListAllAssignments();
-						break;
-					case "3":
-						ListIncompleteAssignments();
-						break;
-					case "4":
-						MarkAssignmentComplete();
-						break;
-					case "5":
-						SearchAssignmentByTitle();
-						break;
-					case "6":
-						UpdateAssignment();
-						break;
-					case "7":
-						DeleteAssignment();
-						break;
-					case "0":
-						return; // Exit
-					default:
-						Console.WriteLine("Invalid choice, try again.");
-						break;
+					Console.WriteLine("Goodbye!");
+					return;
 				}
 			}
+		}
+		private bool HandleInput(string input)
+		{
+			switch (input)
+			{
+				case "1":
+					AddAssignment();
+					break;
+				case "2":
+					ListAllAssignments();
+					break;
+				case "3":
+					ListIncompleteAssignments();
+					break;
+				case "4":
+					MarkAssignmentComplete();
+					break;
+				case "5":
+					SearchAssignmentByTitle(); 
+					break;
+				case "6":
+					UpdateAssignment();
+					break;
+				case "7":
+					DeleteAssignment();
+					break;
+				case "0":
+					return false;
+				default:
+					Console.WriteLine("Invalid choice. Try again.");
+					break;
+			}
+			return true;
 		}
 
 		private void AddAssignment()
@@ -74,13 +91,20 @@ namespace AssignmentManagement.UI
 			var title = Console.ReadLine();
 			Console.Write("Enter the assignment description: ");
 			var description = Console.ReadLine();
+			var dueDate = Console.ReadLine();
+			if (!DateTime.TryParse(dueDate, out var parsedDueDate))
+			{
+				Console.WriteLine("Invalid due date format.");
+				return;
+			}
 			Console.Write("Enter the assignment priority: ");
 			var priorityInput = Console.ReadLine();
 			Enum.TryParse<Priority>(priorityInput, true, out Priority priority);
 			Console.Write("Enter a note, or press Enter to skip: ");
 			var note = Console.ReadLine();
 
-			var assignment = new Assignment(title, description, note, priority);
+
+			var assignment = new Assignment(title, description, parsedDueDate, note, priority);
 			
 			//var assignment = new Assignment(title, description, );
 			if (_assignmentService.AddAssignment(assignment) != null)
@@ -107,7 +131,7 @@ namespace AssignmentManagement.UI
 			{
 				foreach (var assignment in assignments)
 				{
-					Console.WriteLine($"{assignment.Priority} | {assignment.Title}: {assignment.Description} (Completed: {assignment.IsCompleted}) | Note: {assignment.Note}");
+					Console.WriteLine(_formatter.Format(assignment));
 				}
 			}
 
@@ -126,7 +150,7 @@ namespace AssignmentManagement.UI
 			{
 				foreach (var assignment in assignments)
 				{
-					Console.WriteLine($"{assignment.Priority} | {assignment.Title}: {assignment.Description} (Completed: {assignment.IsCompleted}) | Note: {assignment.Note})");
+					Console.WriteLine(_formatter.Format(assignment));
 				}
 			}
 
@@ -165,7 +189,7 @@ namespace AssignmentManagement.UI
 			}
 			else
 			{
-				Console.WriteLine($"Found: {assignment.Priority} | {assignment.Title}: {assignment.Description} (Completed: {assignment.IsCompleted}) | Note: {assignment.Note})");
+				Console.WriteLine(_formatter.Format(assignment));
 			}
 
 			Console.WriteLine("Press any key to continue...");
@@ -179,6 +203,13 @@ namespace AssignmentManagement.UI
 			Console.Write("Enter the new title: ");
 			var newTitle = Console.ReadLine();
 			Console.Write("Enter the new description: ");
+			Console.WriteLine("Enter a due date: ");
+			var newDueDate = Console.ReadLine();
+			if (!DateTime.TryParse(newDueDate, out var parsedDueDate))
+			{
+				Console.WriteLine("Invalid due date format.");
+				return;
+			}
 			var newDescription = Console.ReadLine();
 			Console.Write("Enter the assignment priority: ");
 			var newPriority = Console.ReadLine();
@@ -186,7 +217,7 @@ namespace AssignmentManagement.UI
 			Console.Write("Enter a note, or press Enter to skip: ");
 			var newNote = Console.ReadLine();
 
-			if (_assignmentService.UpdateAssignment(oldTitle, newTitle, newDescription, newNote, priority))
+			if (_assignmentService.UpdateAssignment(oldTitle, newTitle, newDescription, parsedDueDate, newNote, priority))
 			{
 				Console.WriteLine("Assignment updated successfully.");
 			}

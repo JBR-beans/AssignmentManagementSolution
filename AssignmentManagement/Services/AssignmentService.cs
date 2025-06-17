@@ -84,7 +84,7 @@ namespace AssignmentManagement.Core
 
 		}
 
-		public bool UpdateAssignment(string oldTitle, string newTitle, string newDescription, string newNote, Priority newPriority)
+		public bool UpdateAssignment(string oldTitle, string newTitle, string newDescription, DateTime newDueDate, string newNote, Priority newPriority)
 		{
 			var assignment = FindAssignmentByTitle(oldTitle);
 			if (assignment == null)
@@ -95,7 +95,7 @@ namespace AssignmentManagement.Core
 			
 			try
 			{
-				assignment.Update(newTitle, newDescription, newNote, newPriority);
+				assignment.Update(newTitle, newDescription, newDueDate, newNote, newPriority);
 				_logger.Log($"{assignment.Title} updated.");
 				return true; 
 			}
