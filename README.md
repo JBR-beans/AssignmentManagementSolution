@@ -16,7 +16,7 @@ Setup
 
 Running Tests
 - open AssignmentManagementSystem.sln in Visual Studio
-- find “Test” in top toolbar -> select “Run All Tests
+- find â€œTestâ€ in top toolbar -> select â€œRun All Tests
 - analyze results to find areas that need more coverage
 
 Architecture
