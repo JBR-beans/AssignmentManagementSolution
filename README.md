@@ -12,7 +12,7 @@ features:
 Setup
 - clone repo
 - open AssignmentManagementSystem.sln in Visual Studio
-- run AssignmentManagement.Console, AssignmentManagement.Api, or run tests via test explorer
+- run AssignmentManagement.UI, AssignmentManagement.Api, or run tests via test explorer
 
 Running Tests
 - open AssignmentManagementSystem.sln in Visual Studio
