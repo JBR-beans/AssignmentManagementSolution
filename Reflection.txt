@@ -1,0 +1,15 @@
+Reflection
+
+What was your biggest coding challenge this quarter, and how did you overcome it?
+There was more than one challenge that I faced. The biggest challenges I faced were understanding arrow functions or lambdas, planning how to design a loosely coupled system, and understanding dependency inversion. These didn't make sense to me at first, so I had to really practice. Eventually, it clicked. Then, I went and made a few throwaway projects to experiment and test my understanding. After doing that, the AssignmentManagementSystem seemed much less confusing to navigate and the design patterns became clear.
+
+What design decision are you most proud of?
+I'm most proud of designing the core logic to work by implemented interfaces instead of concretions. This makes the core logic clean and maintainable, so I can focus on adding useful features without doing a lot of guesswork. In the beginning, I was a bit overwhelmed at managing the different services and their interfaces. Then, after understanding how they all work together, it became much easier to prioritize what to focus on and where.
+
+How did TDD shape the way you approached building this app?
+TDD made me use a more thoughtful approach compared to how I would work before, which was "work features in quickly and clean up later". This creates technical debt, which slows development and causes issues later. For smaller projects this is fine, but for larger, more complex software, this is headache inducing!
+
+What advice would you give your past self at the start of this course?
+Advice that I would give my past self: start breaking things now, don't wait. I spent time reading and watching, but not enough time making mistakes. I learn so much from mistakes. Simply tracing a bug is like a learning adventure. In fact, this is what helped me understand the importance of a failing test. It's just as important to know precisely what causes the test to fail, as it is to know what causes it to pass. If you can track a bug and discover precisely why it happened, then you will learn so much about how that codes should function without a bug.
+
+ 
