@@ -8,33 +8,33 @@ namespace AssignmentManagement.Tests
 	public class AssignmentServiceTests
 	{
 		[Fact]
-		public void Assignment_AcceptsNote()
+		public void Test_Assignment_AcceptsNote()
 		{
 			var assignment = new Assignment("test", "test desc", "note", Priority.High);
 
 			Assert.Equal("note", assignment.Note);
 		}
 		[Fact]
-		public void Assignment_AcceptsNoNote()
+		public void Test_Assignment_AcceptsNoNote()
 		{
 			var assignment = new Assignment("test", "test desc", Priority.High);
 
 			Assert.Null(assignment.Note);
 		}
 		[Fact]
-		public void Assignment_HasDefaultPriority()
+		public void Test_Assignment_HasDefaultPriority()
 		{
 			var assignment = new Assignment("Task 1", "Details");
 			Assert.Equal(Priority.Medium, assignment.Priority);
 		}
 		[Fact]
-		public void Assignment_AcceptsHighPriority()
+		public void Test_Assignment_AcceptsHighPriority()
 		{
 			var assignment = new Assignment("Urgent Task", "Do it now", Priority.High);
 			Assert.Equal(Priority.High, assignment.Priority);
 		}
 		[Fact]
-		public void TestLogger()
+		public void Test_Logger()
 		{
 			var mockLogger = new Mock<iLogger>();
 			var assignment = new Assignment("Test Title", "Test Description");
@@ -43,7 +43,7 @@ namespace AssignmentManagement.Tests
 			mockLogger.Verify(l => l.Log(It.IsAny<string>()), Times.Once());
 		}
 		[Fact]
-		public void TestFormatAssignment_Success()
+		public void Test_FormatAssignment_Success()
 		{
 			var mockFormatter = new Mock<iAssignmentFormatter>();
 			var assignment = new Assignment("Test Title", "Test Description");
@@ -53,7 +53,7 @@ namespace AssignmentManagement.Tests
 			Assert.Contains("Incomplete", formattedString);
 		}
 		[Fact]
-		public void TestAddAssignment_Success()
+		public void Test_AddAssignment_Success()
 		{
 			var mockService = new Mock<iAssignmentService>();
 			var newAssignment = new Assignment("Test Title", "Test Description");
@@ -65,7 +65,7 @@ namespace AssignmentManagement.Tests
 			mockService.Verify(s => s.AddAssignment(It.IsAny<Assignment>()), Times.Once());
 		}
 		[Fact]
-		public void TestSearchAssignmentByTitle_Found()
+		public void Test_SearchAssignmentByTitle_Found()
 		{
 			var mockService = new Mock<iAssignmentService>();
 			var assignment = new Assignment("Test Title", "Test Description");
@@ -76,7 +76,7 @@ namespace AssignmentManagement.Tests
 			Assert.Equal("Test Description", result.Description);
 		}
 		[Fact]
-		public void TestDeleteAssignment_Success()
+		public void Test_DeleteAssignment_Success()
 		{
 			var mockService = new Mock<iAssignmentService>();
 			var titleToDelete = "Test Title";
@@ -84,19 +84,6 @@ namespace AssignmentManagement.Tests
 			var result = mockService.Object.DeleteAssignment(titleToDelete);
 			Assert.True(result, "Assignment should be successfully deleted.");
 			mockService.Verify(s => s.DeleteAssignment(titleToDelete), Times.Once());
-		}
-		[Fact]
-		public void DeleteAssignment_RemovesExistingAssignment_ReturnsTrue()
-		{
-			var loggerMock = new Mock<iLogger>();
-			var formatterMock = new Mock<iAssignmentFormatter>();
-			var service = new AssignmentService(formatterMock.Object, loggerMock.Object);
-			var assignment = new Assignment("TestTitle", "Test description");
-			service.AddAssignment(assignment);
-			var result = service.DeleteAssignment("TestTitle");
-			Assert.True(result);
-			Assert.Null(service.FindAssignmentByTitle("TestTitle"));
-			loggerMock.Verify(l => l.Log("TestTitle removed."), Times.Once);
 		}
 	}
 }

@@ -23,7 +23,7 @@ Architecture
 - AssignmentManagement.Core contains the core logic for managing Assignments, such as interfaces, services, and the data model for Assignments
 - AssignmentManagement.Api is an exposed api for managing assignments remotely. Extension idea: It also allows you to design a custom UI, or create multiple variations that work with the same core logic. This can be useful for students with accessibility needs, or for multi-platform and multi-device support.
 - AssignmentManagement.UI is a console based desktop app that allows you to manage assignments from command line. This can be useful for systems that are low on resources or for debugging.
-- AssignmentManagement.Tests is the testing suite which covers services, Api, and UI testing.
+- AssignmentManagement.Tests is the testing suite which covers core logic.
 - AssignmentManagement.ApiTests is the testing suite specifically for the Api, to ensure that Api calls run reliably.
 
 Contribute
