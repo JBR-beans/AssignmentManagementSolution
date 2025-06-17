@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\AssignmentManagement.Api.props" />
-</Project>

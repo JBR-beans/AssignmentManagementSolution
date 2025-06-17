@@ -24,6 +24,5 @@ namespace AssignmentManagement.Core
 
 
         public bool UpdateAssignment(string oldTitle, string newTitle, string newDescription, string newNote, Priority newPriority);
-        Assignment? FindByTitle(string title);
     }
 }

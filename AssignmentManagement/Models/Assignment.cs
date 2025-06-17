@@ -58,11 +58,17 @@ namespace AssignmentManagement.Core
 		{
 			IsCompleted = true;
 		}
+		public void MarkIncomplete()
+		{
+			IsCompleted = false;
+		}
 
 		private void Validate(string input, string fieldName)
 		{
 			if (string.IsNullOrWhiteSpace(input))
+			{
 				throw new ArgumentException($"{fieldName} cannot be blank or whitespace.");
+			}
 		}
 	}
 }

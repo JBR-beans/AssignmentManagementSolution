@@ -32,12 +32,6 @@ E:\School\BAS\Spring 2025\Software Engineering II IT 340\AssignmentManagementSol
 E:\School\BAS\Spring 2025\Software Engineering II IT 340\AssignmentManagementSolution\AssignmentManagement.Api\obj\Debug\net9.0\staticwebassets.build.json
 E:\School\BAS\Spring 2025\Software Engineering II IT 340\AssignmentManagementSolution\AssignmentManagement.Api\obj\Debug\net9.0\staticwebassets.development.json
 E:\School\BAS\Spring 2025\Software Engineering II IT 340\AssignmentManagementSolution\AssignmentManagement.Api\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-E:\School\BAS\Spring 2025\Software Engineering II IT 340\AssignmentManagementSolution\AssignmentManagement.Api\obj\Debug\net9.0\staticwebassets\msbuild.AssignmentManagement.Api.Microsoft.AspNetCore.StaticWebAssets.props
-E:\School\BAS\Spring 2025\Software Engineering II IT 340\AssignmentManagementSolution\AssignmentManagement.Api\obj\Debug\net9.0\staticwebassets\msbuild.AssignmentManagement.Api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-E:\School\BAS\Spring 2025\Software Engineering II IT 340\AssignmentManagementSolution\AssignmentManagement.Api\obj\Debug\net9.0\staticwebassets\msbuild.build.AssignmentManagement.Api.props
-E:\School\BAS\Spring 2025\Software Engineering II IT 340\AssignmentManagementSolution\AssignmentManagement.Api\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.AssignmentManagement.Api.props
-E:\School\BAS\Spring 2025\Software Engineering II IT 340\AssignmentManagementSolution\AssignmentManagement.Api\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.AssignmentManagement.Api.props
-E:\School\BAS\Spring 2025\Software Engineering II IT 340\AssignmentManagementSolution\AssignmentManagement.Api\obj\Debug\net9.0\staticwebassets.pack.json
 E:\School\BAS\Spring 2025\Software Engineering II IT 340\AssignmentManagementSolution\AssignmentManagement.Api\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 E:\School\BAS\Spring 2025\Software Engineering II IT 340\AssignmentManagementSolution\AssignmentManagement.Api\obj\Debug\net9.0\Assignme.85B69E27.Up2Date
 E:\School\BAS\Spring 2025\Software Engineering II IT 340\AssignmentManagementSolution\AssignmentManagement.Api\obj\Debug\net9.0\AssignmentManagement.Api.genruntimeconfig.cache
@@ -52,3 +46,4 @@ E:\School\BAS\Spring 2025\Software Engineering II IT 340\AssignmentManagementSol
 E:\School\BAS\Spring 2025\Software Engineering II IT 340\AssignmentManagementSolution\AssignmentManagement.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 E:\School\BAS\Spring 2025\Software Engineering II IT 340\AssignmentManagementSolution\AssignmentManagement.Api\bin\Debug\net9.0\Swashbuckle.Core.dll
 E:\School\BAS\Spring 2025\Software Engineering II IT 340\AssignmentManagementSolution\AssignmentManagement.Api\bin\Debug\net9.0\WebActivatorEx.dll
+E:\School\BAS\Spring 2025\Software Engineering II IT 340\AssignmentManagementSolution\AssignmentManagement.Api\obj\Debug\net9.0\staticwebassets.build.json.cache

@@ -15,54 +15,72 @@ namespace AssignmentManagement.Core
 			_logger = logger;
 		}
 		
-
-		public Assignment? FindByTitle(string title)
+		public Assignment FindAssignmentByTitle(string title)
 		{
-			return _assignments.FirstOrDefault(a => a.Title.Equals(title, StringComparison.OrdinalIgnoreCase));
+			Assignment _assignment = _assignments.FirstOrDefault(a => a.Title.Equals(title, StringComparison.OrdinalIgnoreCase));
+			if (_assignment == null)
+			{
+				_logger.Log($"{_assignment.Title} not found.");
+				return null;
+			}
+
+			_logger.Log($"{_assignment.Title} found.");
+			return _assignment;
 		}
 		public Assignment AddAssignment(Assignment assignment)
 		{
 			if (_assignments.Any(a => a.Title.Equals(assignment.Title, StringComparison.OrdinalIgnoreCase)))
 			{
-				return null; // Duplicate title exists
+				_logger.Log($"Assignment {assignment.Title} already exists.");
+				return null; 
 			}
-
+			
 			_assignments.Add(assignment);
+			_logger.Log($"Assignment {assignment.Title} added successfully.");
 			return assignment;
 		}
 
 		public List<Assignment> ListAll()
 		{
+			_logger.Log($"{_assignments.Count} assignments found.");
 			return new List<Assignment>(_assignments);
 		}
 
 		public List<Assignment> ListIncomplete()
 		{
-			return _assignments.Where(a => !a.IsCompleted).ToList();
+			List<Assignment> _incomplete = _assignments.Where(a => !a.IsCompleted).ToList();
+			_logger.Log($"{_incomplete.Count} incomplete assignments found.");
+			return _incomplete;
 		}
 
-		public Assignment FindAssignmentByTitle(string title)
-		{
-			return _assignments
-				.FirstOrDefault(a => a.Title.Equals(title, StringComparison.OrdinalIgnoreCase));
-		}
+		
 
 		public bool MarkAssignmentComplete(string title)
 		{
 			var assignment = FindAssignmentByTitle(title);
 			if (assignment == null)
-				return false; // Assignment not found
+			{
+				_logger.Log($"{assignment.Title} not found.");
+				return false; 
+			}
+			
 			assignment.MarkComplete();
-			return true; // Assignment marked as complete
+			_logger.Log($"{assignment.Title} marked complete.");
+			return true; 
 		}
 
 		public bool DeleteAssignment(string title)
 		{
 			var assignment = FindAssignmentByTitle(title);
 			if (assignment == null)
-				return false; // Assignment not found
+			{
+				_logger.Log($"{assignment.Title} not found.");
+				return false;
+			}
+				
 			_assignments.Remove(assignment);
-			return true; // Assignment deleted successfully
+			_logger.Log($"{assignment.Title} removed.");
+			return true;
 
 		}
 
@@ -70,15 +88,21 @@ namespace AssignmentManagement.Core
 		{
 			var assignment = FindAssignmentByTitle(oldTitle);
 			if (assignment == null)
-				return false; // Assignment not found
+			{
+				_logger.Log($"{assignment.Title} not found.");
+				return false;
+			}
+			
 			try
 			{
 				assignment.Update(newTitle, newDescription, newNote, newPriority);
-				return true; // Assignment updated successfully
+				_logger.Log($"{assignment.Title} updated.");
+				return true; 
 			}
-			catch (ArgumentException)
+			catch (ArgumentException e)
 			{
-				return false; // Update failed due to validation error
+				_logger.Log($"{assignment.Title} failed to update. | " + e.Message);
+				return false; 
 			}
 		}
 	}
