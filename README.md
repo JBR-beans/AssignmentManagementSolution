@@ -37,4 +37,4 @@ Maintenance Plan
 - touch base with stakeholders and gather feedback 
 
 Developer Notes
-The Assignment management app is designed to assist students of any course in tracking, planning, and coordinating assignments. Personally, this project is the biggest one I have worked with, so it has been an incredible learning experience for me. I hope to pass this enthusiasm for learning to the students who use the application and provide them with tools for success.
+- The Assignment management app is designed to assist students of any course in tracking, planning, and coordinating assignments. Personally, this project is the biggest one I have worked with, so it has been an incredible learning experience for me. I hope to pass this enthusiasm for learning to the students who use the application and provide them with tools for success.
