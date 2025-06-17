@@ -1,4 +1,5 @@
 ﻿using AssignmentManagement.Core;
+using AssignmentManagement.Core.Interfaces;
 using AssignmentManagement.Core.Services;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -8,14 +9,16 @@ namespace AssignmentManagement.UI
 	{
 		public static void Main(string[] args)
 		{
-			// Step 1: Create the AssignmentService instance
-			var assignmentService = new AssignmentService(new AssignmentFormatter(), new ConsoleLogger());
+			var services = new ServiceCollection();
+			services.AddSingleton<iAssignmentService, AssignmentService>();
+			services.AddSingleton<iAssignmentFormatter, AssignmentFormatter>();
+			services.AddSingleton<iLogger, ConsoleLogger>();
+			services.AddSingleton<ConsoleUI>();
 
-			// Step 2: Create the ConsoleUI instance, passing the AssignmentService instance to it
-			var consoleUI = new ConsoleUI(assignmentService);
+			var serviceProvider = services.BuildServiceProvider();
+			var consoleUI = serviceProvider.GetRequiredService<ConsoleUI>();
 
-			// Step 3: Start the Console UI menu system
-			consoleUI.ShowMenu();
+			consoleUI.Run();
 		}
 	}
 }

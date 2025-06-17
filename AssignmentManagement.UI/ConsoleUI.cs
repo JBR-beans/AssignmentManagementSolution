@@ -91,6 +91,7 @@ namespace AssignmentManagement.UI
 			var title = Console.ReadLine();
 			Console.Write("Enter the assignment description: ");
 			var description = Console.ReadLine();
+			Console.WriteLine("Enter a due date: ");
 			var dueDate = Console.ReadLine();
 			if (!DateTime.TryParse(dueDate, out var parsedDueDate))
 			{
@@ -106,7 +107,6 @@ namespace AssignmentManagement.UI
 
 			var assignment = new Assignment(title, description, parsedDueDate, note, priority);
 			
-			//var assignment = new Assignment(title, description, );
 			if (_assignmentService.AddAssignment(assignment) != null)
 			{
 				Console.WriteLine("Assignment added successfully!");
@@ -203,6 +203,7 @@ namespace AssignmentManagement.UI
 			Console.Write("Enter the new title: ");
 			var newTitle = Console.ReadLine();
 			Console.Write("Enter the new description: ");
+			var newDescription = Console.ReadLine();
 			Console.WriteLine("Enter a due date: ");
 			var newDueDate = Console.ReadLine();
 			if (!DateTime.TryParse(newDueDate, out var parsedDueDate))
@@ -210,7 +211,6 @@ namespace AssignmentManagement.UI
 				Console.WriteLine("Invalid due date format.");
 				return;
 			}
-			var newDescription = Console.ReadLine();
 			Console.Write("Enter the assignment priority: ");
 			var newPriority = Console.ReadLine();
 			Enum.TryParse<Priority>(newPriority, true, out Priority priority);

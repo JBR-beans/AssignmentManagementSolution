@@ -50,8 +50,10 @@ namespace AssignmentManagement.Api.Controllers
 				title,
 				updatedAssignment.Title,
 				updatedAssignment.Description,
+				updatedAssignment.DueDate,
 				updatedAssignment.Note,
 				updatedAssignment.Priority
+				
 			);
 
 			if (!success)

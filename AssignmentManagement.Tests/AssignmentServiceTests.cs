@@ -10,34 +10,34 @@ namespace AssignmentManagement.Tests
 		[Fact]
 		public void Test_Assignment_AcceptsNote()
 		{
-			var assignment = new Assignment("test", "test desc", "note", Priority.High);
+			var assignment = new Assignment("test", "test desc", new DateTime(12, 12, 12), "note", Priority.High);
 
 			Assert.Equal("note", assignment.Note);
 		}
 		[Fact]
 		public void Test_Assignment_AcceptsNoNote()
 		{
-			var assignment = new Assignment("test", "test desc", Priority.High);
+			var assignment = new Assignment("test", "test desc", new DateTime(12, 12, 12), Priority.High);
 
 			Assert.Null(assignment.Note);
 		}
 		[Fact]
 		public void Test_Assignment_HasDefaultPriority()
 		{
-			var assignment = new Assignment("Task 1", "Details");
+			var assignment = new Assignment("Task 1", "Details", new DateTime(12, 12, 12));
 			Assert.Equal(Priority.Medium, assignment.Priority);
 		}
 		[Fact]
 		public void Test_Assignment_AcceptsHighPriority()
 		{
-			var assignment = new Assignment("Urgent Task", "Do it now", Priority.High);
+			var assignment = new Assignment("Urgent Task", "Do it now", new DateTime(12, 12, 12), Priority.High);
 			Assert.Equal(Priority.High, assignment.Priority);
 		}
 		[Fact]
 		public void Test_Logger()
 		{
 			var mockLogger = new Mock<iLogger>();
-			var assignment = new Assignment("Test Title", "Test Description");
+			var assignment = new Assignment("Test Title", "Test Description", new DateTime(12, 12, 12));
 			mockLogger.Setup(l => l.Log(It.IsAny<string>())).Verifiable();
 			mockLogger.Object.Log($"Assignment created: {assignment.Title}");
 			mockLogger.Verify(l => l.Log(It.IsAny<string>()), Times.Once());
@@ -46,7 +46,7 @@ namespace AssignmentManagement.Tests
 		public void Test_FormatAssignment_Success()
 		{
 			var mockFormatter = new Mock<iAssignmentFormatter>();
-			var assignment = new Assignment("Test Title", "Test Description");
+			var assignment = new Assignment("Test Title", "Test Description", new DateTime(12, 12, 12));
 			mockFormatter.Setup(f => f.Format(It.IsAny<Assignment>())).Returns((Assignment a) => $"[{a.Id}] {a.Title} - {(a.IsCompleted ? "Completed" : "Incomplete")}");
 			var formattedString = mockFormatter.Object.Format(assignment);
 			Assert.Contains("Test Title", formattedString);
@@ -56,7 +56,7 @@ namespace AssignmentManagement.Tests
 		public void Test_AddAssignment_Success()
 		{
 			var mockService = new Mock<iAssignmentService>();
-			var newAssignment = new Assignment("Test Title", "Test Description");
+			var newAssignment = new Assignment("Test Title", "Test Description", new DateTime(12, 12, 12));
 			mockService.Setup(s => s.AddAssignment(It.IsAny<Assignment>())).Returns((Assignment a) => a);
 			var result = mockService.Object.AddAssignment(newAssignment);
 
@@ -68,7 +68,7 @@ namespace AssignmentManagement.Tests
 		public void Test_SearchAssignmentByTitle_Found()
 		{
 			var mockService = new Mock<iAssignmentService>();
-			var assignment = new Assignment("Test Title", "Test Description");
+			var assignment = new Assignment("Test Title", "Test Description", new DateTime(12, 12, 12));
 			mockService.Setup(s => s.FindAssignmentByTitle("Test Title")).Returns(assignment);
 			var result = mockService.Object.FindAssignmentByTitle("Test Title");
 			Assert.NotNull(result);
