@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "AssignmentManagement.Api.Controllers.AssignmentsController",
+    "Method": "CreateAssignment",
+    "RelativePath": "api/Assignments",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "assignment",
+        "Type": "AssignmentManagement.Core.Assignment",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AssignmentManagement.Api.Controllers.AssignmentsController",
     "Method": "ListAll",
     "RelativePath": "api/Assignments",
     "HttpMethod": "GET",
@@ -11,14 +27,19 @@
   },
   {
     "ContainingType": "AssignmentManagement.Api.Controllers.AssignmentsController",
-    "Method": "CreateAssignment",
-    "RelativePath": "api/Assignments",
-    "HttpMethod": "POST",
+    "Method": "Update",
+    "RelativePath": "api/Assignments/{title}",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "assignment",
+        "Name": "title",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedAssignment",
         "Type": "AssignmentManagement.Core.Assignment",
         "IsRequired": true
       }

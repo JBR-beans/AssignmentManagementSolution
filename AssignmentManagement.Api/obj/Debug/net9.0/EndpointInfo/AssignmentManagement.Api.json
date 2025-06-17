@@ -6,16 +6,6 @@
   },
   "paths": {
     "/api/Assignments": {
-      "get": {
-        "tags": [
-          "Assignments"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
       "post": {
         "tags": [
           "Assignments"
@@ -39,6 +29,16 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Assignments"
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -68,6 +68,45 @@
       }
     },
     "/api/Assignments/{title}": {
+      "put": {
+        "tags": [
+          "Assignments"
+        ],
+        "parameters": [
+          {
+            "name": "title",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Assignment"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Assignment"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Assignment"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
       "delete": {
         "tags": [
           "Assignments"
@@ -148,11 +187,14 @@
             "nullable": true
           },
           "isCompleted": {
-            "type": "boolean",
-            "readOnly": true
+            "type": "boolean"
           },
           "priority": {
             "$ref": "#/components/schemas/Priority"
+          },
+          "note": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

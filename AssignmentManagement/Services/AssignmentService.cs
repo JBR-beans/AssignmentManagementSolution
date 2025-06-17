@@ -74,7 +74,7 @@ namespace AssignmentManagement.Core
 			var assignment = FindAssignmentByTitle(title);
 			if (assignment == null)
 			{
-				_logger.Log($"{assignment.Title} not found.");
+				_logger.Log($"Assignment not found.");
 				return false;
 			}
 				
