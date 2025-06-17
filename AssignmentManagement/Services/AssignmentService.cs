@@ -20,7 +20,7 @@ namespace AssignmentManagement.Core
 			Assignment _assignment = _assignments.FirstOrDefault(a => a.Title.Equals(title, StringComparison.OrdinalIgnoreCase));
 			if (_assignment == null)
 			{
-				_logger.Log($"{_assignment.Title} not found.");
+				_logger.Log($"Assignment not found.");
 				return null;
 			}
 
